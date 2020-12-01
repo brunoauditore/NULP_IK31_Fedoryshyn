@@ -1,7 +1,5 @@
 import unittest
-from app import *
-import time
-
+from app import main, my_good_fun,  home_work
 
 
 class TestClass(unittest.TestCase):
@@ -25,11 +23,7 @@ class TestClass(unittest.TestCase):
 
     def test_home_work(self):
         # Ваш захист
-        
-
+        self.assertEqual(home_work(), "День")
 
     def test_my_fun(self):
         self.assertEqual(my_good_fun(), "success")
-
-    with open('result.txt', 'w') as f:
-         print('Filename:', filename, file=f)
