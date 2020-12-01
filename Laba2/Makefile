@@ -1,20 +1,17 @@
-help:
-	@echo "---------------HELP-----------------"
-
 
 install:
 	@echo "---------------INSTALL-----------------"
 	@pipenv --python 3.8
-	pipenv shell
-	pipenv install requests
-	pipenv install ntplib
-	pipenv install pytest
+	@pipenv shell
+	@pipenv install requests
+	@pipenv install ntplib
+	@pipenv install pytest
 
 test:
-	pytest test/test.py > result.txt
+	@pytest test/test.py > result.txt
 run:
-	python3 app.py > result_py.txt
+	@python3 app.py > result_py.txt
 deploy:
-	git add .
-	git commit -m "make deploy commit"
-	git push
+	@git add .
+	@git commit -m "make deploy commit"
+	@git push
