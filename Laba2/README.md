@@ -4,7 +4,7 @@ Laba2
 
 ### Створюю app.py та test.py 
 ### Запускаю pytest - результат успішний
-###8) В app.py дописую функцію , яка провіряє час доби
+### 8) В app.py дописую функцію , яка провіряє час доби
 
     def home_work():
         s = str (datetime.now())
@@ -14,10 +14,10 @@ Laba2
         else:
             return("День")
             
-###9) Тестую функцію home_work , резульат успішний
+### 9) Тестую функцію home_work , резульат успішний
     def test_home_work(self):
-        # Ваш захист
-        self.assertEqual(home_work(), "День")
+       # Ваш захист
+       self.assertEqual(home_work(), "День")
         
-###10) Перенаправляю вивід команди pytest в файл result.txt , використовуючи команду:
+### 10) Перенаправляю вивід команди pytest в файл result.txt , використовуючи команду:
     pytest test/test.py > result.txt
